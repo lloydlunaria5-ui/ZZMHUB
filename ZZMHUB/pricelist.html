@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ZZMHUB - Price List</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body { font-family: Arial, sans-serif; background: #ffffff; }
+  </style>
+</head>
+<body>
+  <div class="bg-white shadow-lg">
+    
+    <header class="bg-gradient-to-r from-gray-800 to-gray-900 text-white">
+      <div class="container mx-auto px-6 py-4 flex items-center justify-between">
+        <div class="text-2xl">
+          zzm<span class="font-light">hub</span>
+        </div>
+
+        <div class="flex-1 max-w-xl mx-8">
+          <div class="relative">
+            <input type="text" placeholder="Search..." class="w-full px-4 py-2 rounded-full bg-white text-gray-800 pr-12">
+            <button class="absolute right-2 top-1/2 -translate-y-1/2 bg-blue-600 text-white px-4 py-1 rounded-full text-sm">Search</button>
+          </div>
+        </div>
+
+        <div class="flex items-center gap-6">
+          <div class="flex items-center gap-2">
+            <div class="bg-blue-600 rounded-full p-2 relative">
+              <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="w-5 h-5">
+                <circle cx="8" cy="21" r="1"></circle>
+                <circle cx="19" cy="21" r="1"></circle>
+                <path d="M2.05 2.05h2l2.66 12.42a2 2 0 0 0 2 1.58h9.78a2 2 0 0 0 1.95-1.57l1.65-7.43H5.12"></path>
+              </svg>
+              <span class="absolute -top-1 -right-1 bg-red-500 text-xs rounded-full w-5 h-5 flex items-center justify-center">0</span>
+            </div>
+            <span>₱ 0.00</span>
+          </div>
+          <span class="text-sm">Login / Register</span>
+        </div>
+      </div>
+
+      <nav class="bg-black">
+        <div class="container mx-auto px-6 py-3 flex justify-around text-sm">
+          <a href="home.html" class="hover:text-blue-400 ">HOME</a>
+          <a href="products.html" class="hover:text-blue-400 ">PRODUCTS</a>
+          <a href="about.html" class="hover:text-blue-400 ">ABOUT US</a>
+          <a href="pricelist.html" class="hover:text-blue-400 underline">PRICE LIST</a>
+          <a href="contact.html" class="hover:text-blue-400 ">CONTACT US</a>
+        </div>
+      </nav>
+    </header>
+  
+    
+    <main class="container mx-auto px-6 py-12">
+      <h1 class="text-4xl mb-8">Price List</h1>
+
+      <div class="space-y-8">
+        <div>
+          <h2 class="text-2xl mb-4 bg-gray-800 text-white p-3 rounded">Processors</h2>
+          <table class="w-full border-collapse">
+            <thead>
+              <tr class="bg-gray-100">
+                <th class="border border-gray-300 p-3 text-left">Product</th>
+                <th class="border border-gray-300 p-3 text-left">Specs</th>
+                <th class="border border-gray-300 p-3 text-right">Price</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td class="border border-gray-300 p-3">Intel Core i9-14900K</td>
+                <td class="border border-gray-300 p-3">24 Cores, 32 Threads, 6.0GHz</td>
+                <td class="border border-gray-300 p-3 text-right">₱ 35,500.00</td>
+              </tr>
+              <tr>
+                <td class="border border-gray-300 p-3">AMD Ryzen 9 7950X</td>
+                <td class="border border-gray-300 p-3">16 Cores, 32 Threads, 5.7GHz</td>
+                <td class="border border-gray-300 p-3 text-right">₱ 32,800.00</td>
+              </tr>
+              <tr>
+                <td class="border border-gray-300 p-3">Intel Core i7-14700K</td>
+                <td class="border border-gray-300 p-3">20 Cores, 28 Threads, 5.6GHz</td>
+                <td class="border border-gray-300 p-3 text-right">₱ 24,500.00</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+
+        <div>
+          <h2 class="text-2xl mb-4 bg-gray-800 text-white p-3 rounded">Graphics Cards</h2>
+          <table class="w-full border-collapse">
+            <thead>
+              <tr class="bg-gray-100">
+                <th class="border border-gray-300 p-3 text-left">Product</th>
+                <th class="border border-gray-300 p-3 text-left">Specs</th>
+                <th class="border border-gray-300 p-3 text-right">Price</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td class="border border-gray-300 p-3">NVIDIA RTX 4090</td>
+                <td class="border border-gray-300 p-3">24GB GDDR6X</td>
+                <td class="border border-gray-300 p-3 text-right">₱ 115,000.00</td>
+              </tr>
+              <tr>
+                <td class="border border-gray-300 p-3">AMD RX 7900 XTX</td>
+                <td class="border border-gray-300 p-3">24GB GDDR6</td>
+                <td class="border border-gray-300 p-3 text-right">₱ 58,500.00</td>
+              </tr>
+              <tr>
+                <td class="border border-gray-300 p-3">NVIDIA RTX 4070 Ti</td>
+                <td class="border border-gray-300 p-3">12GB GDDR6X</td>
+                <td class="border border-gray-300 p-3 text-right">₱ 48,800.00</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+
+        <div>
+          <h2 class="text-2xl mb-4 bg-gray-800 text-white p-3 rounded">Memory (RAM)</h2>
+          <table class="w-full border-collapse">
+            <thead>
+              <tr class="bg-gray-100">
+                <th class="border border-gray-300 p-3 text-left">Product</th>
+                <th class="border border-gray-300 p-3 text-left">Specs</th>
+                <th class="border border-gray-300 p-3 text-right">Price</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td class="border border-gray-300 p-3">Corsair Vengeance 32GB</td>
+                <td class="border border-gray-300 p-3">DDR5-6000 (2x16GB)</td>
+                <td class="border border-gray-300 p-3 text-right">₱ 8,200.00</td>
+              </tr>
+              <tr>
+                <td class="border border-gray-300 p-3">G.Skill Trident Z5 32GB</td>
+                <td class="border border-gray-300 p-3">DDR5-6400 (2x16GB)</td>
+                <td class="border border-gray-300 p-3 text-right">₱ 9,500.00</td>
+              </tr>
+              <tr>
+                <td class="border border-gray-300 p-3">Kingston Fury 16GB</td>
+                <td class="border border-gray-300 p-3">DDR4-3200 (2x8GB)</td>
+                <td class="border border-gray-300 p-3 text-right">₱ 3,800.00</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+
+        <p class="text-sm text-gray-600 italic">
+          * Prices are subject to change without prior notice. Contact us for the latest pricing.
+        </p>
+      </div>
+    </main>
+  
+    
+    <footer class="bg-gray-900 text-white mt-12">
+      <div class="container mx-auto px-6 py-8">
+        <div class="grid grid-cols-3 gap-8">
+          <div>
+            <h3 class="mb-4">ADDRESS</h3>
+            <p class="text-sm text-gray-400">Branches</p>
+          </div>
+          <div>
+            <h3 class="mb-4">SITEMAP</h3>
+            <ul class="space-y-2 text-sm text-gray-400">
+              <li>Home</li>
+              <li>System Builder</li>
+              <li>Featured Builds</li>
+              <li>Completed Builds</li>
+              <li>Browse Products</li>
+              <li>Contact Us</li>
+            </ul>
+          </div>
+          <div class="text-right">
+            <div class="text-2xl mb-4">zzm<span class="font-light">hub</span></div>
+            <p class="text-xs text-gray-400">Copyright © 2019-2026 ZZMHUB. All rights reserved.</p>
+          </div>
+        </div>
+      </div>
+    </footer>
+  
+  </div>
+</body>
+</html>
