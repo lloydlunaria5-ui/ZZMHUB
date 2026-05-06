@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Settings - ZZMHUB Laptop Store Super Admin</title>
+  <link rel="stylesheet" href="style.css">
+<base target="_blank">
+<base target="_blank">
+</head>
+<body class="dashboard-page">
+  <div class="dashboard-header">
+    <div class="container">
+      <a href="index.html" class="logo">zzm<span>hub</span></a>
+      <h1>Super Admin Dashboard</h1>
+      <div style="display:flex;align-items:center;gap:16px;">
+        <span id="dashboard-user" style="color:var(--text-muted);font-size:14px;">Super Admin</span>
+        <button onclick="logout()" class="btn-login" style="border-color:var(--border-color);color:var(--text-primary);">Logout</button>
+      </div>
+    </div>
+  </div>
+
+  <div style="background:var(--bg-secondary);border-bottom:1px solid var(--border-color);">
+    <div class="container">
+      <div class="dashboard-nav">
+        <a href="superadmin-dashboard.html">Analytics</a>
+        <a href="superadmin-accounts.html">Account Management</a>
+        <a href="superadmin-products.html">Products</a>
+        <a href="superadmin-orders.html">Orders</a>
+        <a href="superadmin-settings.html" class="active">Settings</a>
+        <a href="index.html">View Store</a>
+      </div>
+    </div>
+  </div>
+
+  <main class="dashboard-main">
+    <div class="container">
+      <h2 style="font-size:24px;font-weight:800;margin-bottom:24px;color:var(--text-primary);">System Settings</h2>
+
+      <div class="chart-section" style="max-width:800px;">
+        <h3>Store Information</h3>
+        <div class="form-group">
+          <label>Store Name</label>
+          <input type="text" value="ZZMHUB" style="width:100%;padding:12px 16px;border:1px solid var(--border-color);background:var(--bg-secondary);color:var(--text-primary);border-radius:8px;">
+        </div>
+        <div class="form-group">
+          <label>Store Email</label>
+          <input type="email" value="support@zzmhub.com" style="width:100%;padding:12px 16px;border:1px solid var(--border-color);background:var(--bg-secondary);color:var(--text-primary);border-radius:8px;">
+        </div>
+        <div class="form-group">
+          <label>Store Phone</label>
+          <input type="tel" value="+63 2 8123 4567" style="width:100%;padding:12px 16px;border:1px solid var(--border-color);background:var(--bg-secondary);color:var(--text-primary);border-radius:8px;">
+        </div>
+        <button class="btn-primary">Save Changes</button>
+      </div>
+
+      <div class="chart-section" style="max-width:800px;">
+        <h3>Payment Settings</h3>
+        <div class="form-group">
+          <label style="display:flex;align-items:center;gap:10px;color:var(--text-secondary);cursor:pointer;">
+            <input type="checkbox" checked style="width:18px;height:18px;accent-color:var(--accent-cyan);">
+            <span>Enable Cash on Delivery</span>
+          </label>
+        </div>
+        <div class="form-group">
+          <label style="display:flex;align-items:center;gap:10px;color:var(--text-secondary);cursor:pointer;">
+            <input type="checkbox" checked style="width:18px;height:18px;accent-color:var(--accent-cyan);">
+            <span>Enable Bank Transfer</span>
+          </label>
+        </div>
+        <div class="form-group">
+          <label style="display:flex;align-items:center;gap:10px;color:var(--text-secondary);cursor:pointer;">
+            <input type="checkbox" style="width:18px;height:18px;accent-color:var(--accent-cyan);">
+            <span>Enable GCash</span>
+          </label>
+        </div>
+        <div class="form-group">
+          <label style="display:flex;align-items:center;gap:10px;color:var(--text-secondary);cursor:pointer;">
+            <input type="checkbox" style="width:18px;height:18px;accent-color:var(--accent-cyan);">
+            <span>Enable PayMaya</span>
+          </label>
+        </div>
+        <button class="btn-primary">Save Changes</button>
+      </div>
+
+      <div class="chart-section" style="max-width:800px;">
+        <h3>Shipping Settings</h3>
+        <div class="form-group">
+          <label>Standard Shipping Fee</label>
+          <input type="text" value="₱ 150.00" style="width:100%;padding:12px 16px;border:1px solid var(--border-color);background:var(--bg-secondary);color:var(--text-primary);border-radius:8px;">
+        </div>
+        <div class="form-group">
+          <label>Free Shipping Minimum Order</label>
+          <input type="text" value="₱ 5,000.00" style="width:100%;padding:12px 16px;border:1px solid var(--border-color);background:var(--bg-secondary);color:var(--text-primary);border-radius:8px;">
+        </div>
+        <button class="btn-primary">Save Changes</button>
+      </div>
+    </div>
+  </main>
+
+  <script src="script.js"></script>
+  <script>
+    document.addEventListener('DOMContentLoaded', function() {
+      const user = JSON.parse(localStorage.getItem('zzmhub_user'));
+      if (!user || user.role !== 'superadmin') {
+        window.location.href = 'login.html';
+      }
+    });
+  </script>
+</body>
+</html>

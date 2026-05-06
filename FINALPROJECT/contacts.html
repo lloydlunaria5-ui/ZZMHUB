@@ -1,0 +1,122 @@
+!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact Us - ZZMHUB Laptop Store</title>
+  <link rel="stylesheet" href="style.css">
+<base target="_blank">
+<base target="_blank">
+</head>
+<body>
+  <header>
+    <div class="container">
+      <div class="header-top">
+        <a href="index.html" class="logo">zzm<span>hub</span></a>
+        <div class="search-box">
+          <input type="text" placeholder="Search laptops...">
+          <button>Search</button>
+        </div>
+        <div class="header-actions">
+          <div class="cart-icon">
+            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <circle cx="8" cy="21" r="1"></circle>
+              <circle cx="19" cy="21" r="1"></circle>
+              <path d="M2.05 2.05h2l2.66 12.42a2 2 0 0 0 2 1.58h9.78a2 2 0 0 0 1.95-1.57l1.65-7.43H5.12"></path>
+            </svg>
+            <span class="cart-count" id="cart-count">0</span>
+          </div>
+          <span class="cart-total" id="cart-total">₱ 0.00</span>
+          <div id="login-area">
+            <a href="login.html" class="btn-login">Login / Register</a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <nav>
+      <div class="container">
+        <div class="nav-links">
+          <a href="index.html">Home</a>
+          <a href="products.html">Products</a>
+          <a href="aboutus.html">About Us</a>
+          <a href="pricelist.html">Price List</a>
+          <a href="contacts.html" class="active">Contact Us</a>
+        </div>
+      </div>
+    </nav>
+  </header>
+
+  <main>
+    <div class="container py-12">
+      <h1 class="section-title" style="display:block;text-align:center;">Contact Us</h1>
+
+      <div class="contact-form">
+        <form id="contact-form">
+          <div class="form-group">
+            <label for="name">Name</label>
+            <input type="text" id="name" placeholder="Your full name" required>
+          </div>
+
+          <div class="form-group">
+            <label for="email">Email</label>
+            <input type="email" id="email" placeholder="your@email.com" required>
+          </div>
+
+          <div class="form-group">
+            <label for="mobile">Mobile</label>
+            <input type="tel" id="mobile" placeholder="09XX XXX XXXX" required>
+          </div>
+
+          <div class="form-group">
+            <label for="subject">Subject</label>
+            <input type="text" id="subject" placeholder="How can we help?">
+          </div>
+
+          <div class="form-group">
+            <label for="message">Message / Suggestion / Comments</label>
+            <textarea id="message" placeholder="Tell us what's on your mind..." required></textarea>
+          </div>
+
+          <button type="submit" class="auth-btn">Send Message</button>
+        </form>
+      </div>
+
+      <div style="max-width:600px;margin:40px auto 0;text-align:center;">
+        <h3 style="font-size:20px;margin-bottom:16px;color:var(--accent-cyan);">Other Ways to Reach Us</h3>
+        <p style="color:var(--text-secondary);margin-bottom:8px;"><strong style="color:var(--text-primary);">Email:</strong> support@zzmhub.com</p>
+        <p style="color:var(--text-secondary);margin-bottom:8px;"><strong style="color:var(--text-primary);">Phone:</strong> +63 2 8123 4567</p>
+        <p style="color:var(--text-secondary);margin-bottom:8px;"><strong style="color:var(--text-primary);">Facebook:</strong> /zzmhub</p>
+        <p style="color:var(--text-secondary);"><strong style="color:var(--text-primary);">Business Hours:</strong> Mon-Sat 9:00 AM - 7:00 PM</p>
+      </div>
+    </div>
+  </main>
+
+  <footer>
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-col">
+          <h3>Address</h3>
+          <p>Main Branch: 123 Tech Street, Makati City, Philippines</p>
+
+        </div>
+        <div class="footer-col">
+          <h3>Sitemap</h3>
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="products.html">Browse Products</a></li>
+            <li><a href="aboutus.html">About Us</a></li>
+            <li><a href="pricelist.html">Price List</a></li>
+            <li><a href="contacts.html">Contact Us</a></li>
+          </ul>
+        </div>
+        <div class="footer-col footer-brand">
+          <div class="logo">zzm<span>hub</span></div>
+          <p>Copyright © 2019-2026 ZZMHUB. All rights reserved.</p>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>

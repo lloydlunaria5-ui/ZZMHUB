@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Admin Dashboard - ZZMHUB Laptop Store</title>
+  <link rel="stylesheet" href="style.css">
+<base target="_blank">
+<base target="_blank">
+</head>
+<body class="dashboard-page">
+  <div class="dashboard-header">
+    <div class="container">
+      <a href="index.html" class="logo">zzm<span>hub</span></a>
+      <h1>Admin Dashboard</h1>
+      <div style="display:flex;align-items:center;gap:16px;">
+        <span id="dashboard-user" style="color:var(--text-muted);font-size:14px;">Admin</span>
+        <button onclick="logout()" class="btn-login" style="border-color:var(--border-color);color:var(--text-primary);">Logout</button>
+      </div>
+    </div>
+  </div>
+
+  <div style="background:var(--bg-secondary);border-bottom:1px solid var(--border-color);">
+    <div class="container">
+      <div class="dashboard-nav">
+        <a href="admin-dashboard.html" class="active">Analytics</a>
+        <a href="admin-products.html">Products</a>
+        <a href="admin-orders.html">Orders</a>
+        <a href="index.html">View Store</a>
+      </div>
+    </div>
+  </div>
+
+  <main class="dashboard-main">
+    <div class="container">
+      <h2 style="font-size:24px;font-weight:800;margin-bottom:24px;color:var(--text-primary);">Analytics Overview</h2>
+
+      <div class="stats-grid">
+        <div class="stat-card">
+          <h4>Total Sales</h4>
+          <div class="stat-value">₱ 1,245,890.00</div>
+          <div class="stat-change">+12.5% from last month</div>
+        </div>
+        <div class="stat-card">
+          <h4>Total Orders</h4>
+          <div class="stat-value">342</div>
+          <div class="stat-change">+8.3% from last month</div>
+        </div>
+        <div class="stat-card">
+          <h4>Total Customers</h4>
+          <div class="stat-value">128</div>
+          <div class="stat-change">+15.2% from last month</div>
+        </div>
+        <div class="stat-card">
+          <h4>Total Products</h4>
+          <div class="stat-value">56</div>
+          <div class="stat-change">+3.1% from last month</div>
+        </div>
+      </div>
+
+      <div class="chart-section">
+        <h3>Sales Analytics</h3>
+        <div class="chart-placeholder">[Sales Chart Placeholder]</div>
+      </div>
+
+      <div class="chart-section">
+        <h3>Order Trends</h3>
+        <div class="chart-placeholder">[Orders Chart Placeholder]</div>
+      </div>
+
+      <div class="chart-section">
+        <h3>Customer Growth</h3>
+        <div class="chart-placeholder">[Customer Chart Placeholder]</div>
+      </div>
+
+      <div class="chart-section">
+        <h3>Top Selling Products</h3>
+        <div class="chart-placeholder">[Top Products Chart Placeholder]</div>
+      </div>
+    </div>
+  </main>
+
+  <script src="script.js"></script>
+  <script>
+    document.addEventListener('DOMContentLoaded', function() {
+      const user = JSON.parse(localStorage.getItem('zzmhub_user'));
+      if (!user || (user.role !== 'admin' && user.role !== 'superadmin')) {
+        window.location.href = 'login.html';
+      }
+    });
+  </script>
+</body>
+</html>
