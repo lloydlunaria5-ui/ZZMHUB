@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>User Management - ZZMHUB Laptop Store</title>
+  <link rel="stylesheet" href="style.css">
+<base target="_blank">
+<base target="_blank">
+</head>
+<body class="dashboard-page">
+  <div class="dashboard-header">
+    <div class="container">
+      <a href="index.html" class="logo">zzm<span>hub</span></a>
+      <h1>Admin Dashboard</h1>
+      <div style="display:flex;align-items:center;gap:16px;">
+        <span id="dashboard-user" style="color:var(--text-muted);font-size:14px;">Admin</span>
+        <button onclick="logout()" class="btn-login" style="border-color:var(--border-color);color:var(--text-primary);">Logout</button>
+      </div>
+    </div>
+  </div>
+
+  <div style="background:var(--bg-secondary);border-bottom:1px solid var(--border-color);">
+    <div class="container">
+      <div class="dashboard-nav">
+        <a href="admin-dashboard.html">Analytics</a>
+        <a href="admin-users.html" class="active">User Management</a>
+        <a href="admin-products.html">Products</a>
+        <a href="admin-orders.html">Orders</a>
+        <a href="index.html">View Store</a>
+      </div>
+    </div>
+  </div>
+
+  <main class="dashboard-main">
+    <div class="container">
+      <div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:24px;">
+        <h2 style="font-size:24px;font-weight:800;color:var(--text-primary);">User Management</h2>
+        <button class="btn-primary">+ Add New User</button>
+      </div>
+
+      <div style="overflow-x:auto;">
+        <table class="management-table">
+          <thead>
+            <tr>
+              <th>ID</th>
+              <th>Name</th>
+              <th>Email</th>
+              <th>Status</th>
+              <th>Joined</th>
+              <th>Actions</th>
+            </tr>
+          </thead>
+          <tbody id="users-table-body">
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </main>
+
+  <script src="script.js"></script>
+  <script>
+    document.addEventListener('DOMContentLoaded', function() {
+      const user = JSON.parse(localStorage.getItem('zzmhub_user'));
+      if (!user || (user.role !== 'admin' && user.role !== 'superadmin')) {
+        window.location.href = 'login.html';
+      }
+    });
+  </script>
+</body>
+</html>

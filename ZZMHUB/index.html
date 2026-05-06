@@ -1,0 +1,153 @@
+!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ZZMHUB - Premium Laptop Store</title>
+  <link rel="stylesheet" href="style.css">
+<base target="_blank">
+<base target="_blank">
+</head>
+<body>
+  <header>
+    <div class="container">
+      <div class="header-top">
+        <a href="index.html" class="logo">zzm<span>hub</span></a>
+        <div class="search-box">
+          <input type="text" placeholder="Search laptops...">
+          <button>Search</button>
+        </div>
+        <div class="header-actions">
+          <a href="cart.html" class="cart-link">
+            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <circle cx="8" cy="21" r="1"></circle>
+              <circle cx="19" cy="21" r="1"></circle>
+              <path d="M2.05 2.05h2l2.66 12.42a2 2 0 0 0 2 1.58h9.78a2 2 0 0 0 1.95-1.57l1.65-7.43H5.12"></path>
+            </svg>
+            <span class="cart-count" id="cart-count">0</span>
+          </a>
+          <span class="cart-total" id="cart-total">₱ 0.00</span>
+          <a href="cart.html" class="btn-login">My Cart</a>
+          <div id="login-area">
+            <a href="login.html" class="btn-login">Login</a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <nav>
+      <div class="container">
+        <div class="nav-links">
+          <a href="index.html" class="active">Home</a>
+          <a href="products.html">Products</a>
+          <a href="aboutus.html">About Us</a>
+          <a href="pricelist.html">Price List</a>
+          <a href="contacts.html">Contact Us</a>
+          <a href="cart.html">Cart</a>
+        </div>
+      </div>
+    </nav>
+  </header>
+
+  <main>
+    <!-- HERO SECTION -->
+    <div class="hero">
+      <div class="container">
+        <h1>Welcome to ZZMHUB</h1>
+        <p>Your Ultimate Destination for Premium Laptops & Gaming Rigs</p>
+        <a href="products.html" class="btn-primary">Shop Now</a>
+      </div>
+    </div>
+
+    <div class="container py-12">
+      <!-- FEATURE CARDS -->
+      <div class="features-grid">
+        <div class="feature-card">
+          <div class="feature-icon">💻</div>
+          <h3>Latest Laptops</h3>
+          <p>Top-tier gaming & professional laptops from leading brands</p>
+        </div>
+        <div class="feature-card">
+          <div class="feature-icon">🚚</div>
+          <h3>Fast Delivery</h3>
+          <p>Quick shipping nationwide with real-time tracking</p>
+        </div>
+        <div class="feature-card">
+          <div class="feature-icon">🛡️</div>
+          <h3>Warranty Support</h3>
+          <p>Full manufacturer warranty on all laptop products</p>
+        </div>
+      </div>
+
+      <!-- FEATURED PRODUCTS -->
+      <div>
+        <h2 class="section-title">Featured Laptops</h2>
+        <div class="products-grid">
+          <div class="product-card">
+            <div class="product-image">
+              <span class="product-image-placeholder">🎮 ASUS ROG Strix G16</span>
+            </div>
+            <h4>ASUS ROG Strix G16 (2025) — Gaming Laptop</h4>
+            <p style="font-size:12px;color:var(--text-muted);margin-bottom:8px;">Ryzen 9 8940HX · RTX 5050 · 16" 165Hz · 16GB DDR5 · 512GB SSD</p>
+            <p class="product-price">₱ 69,995.00</p>
+            <button class="btn-add-cart" onclick="addToCart('ASUS ROG Strix G16 (2025)', 69995)">Add to Cart</button>
+          </div>
+          <div class="product-card">
+            <div class="product-image">
+              <span class="product-image-placeholder">🎒 Lenovo IdeaPad Slim 3</span>
+            </div>
+            <h4>Lenovo IdeaPad Slim 3 — School & Work Laptop</h4>
+            <p style="font-size:12px;color:var(--text-muted);margin-bottom:8px;">Intel i5-13420H · 16GB DDR5 · 512GB SSD · 15.6" FHD IPS · 14.5hr Battery</p>
+            <p class="product-price">₱ 28,995.00</p>
+            <button class="btn-add-cart" onclick="addToCart('Lenovo IdeaPad Slim 3', 28995)">Add to Cart</button>
+          </div>
+          <div class="product-card">
+            <div class="product-image">
+              <span class="product-image-placeholder">🎮 Acer Nitro V 16</span>
+            </div>
+            <h4>Acer Nitro V 16 — Budget Gaming Laptop</h4>
+            <p style="font-size:12px;color:var(--text-muted);margin-bottom:8px;">Ryzen 5 240 · RTX 5050 · 16" 180Hz · 16GB DDR5 · 512GB SSD · 12hr Battery</p>
+            <p class="product-price">₱ 54,995.00</p>
+            <button class="btn-add-cart" onclick="addToCart('Acer Nitro V 16', 54995)">Add to Cart</button>
+          </div>
+          <div class="product-card">
+            <div class="product-image">
+              <span class="product-image-placeholder">💼 HP Laptop 14</span>
+            </div>
+            <h4>HP Laptop 14-EP1144TU — Office & Student Laptop</h4>
+            <p style="font-size:12px;color:var(--text-muted);margin-bottom:8px;">Intel i5-120U · 16GB DDR4 · 512GB SSD · 14" FHD IPS · Wi-Fi 6</p>
+            <p class="product-price">₱ 26,995.00</p>
+            <button class="btn-add-cart" onclick="addToCart('HP Laptop 14-EP1144TU', 26995)">Add to Cart</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </main>
+
+  <footer>
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-col">
+          <h3>Address</h3>
+          <p>Main Branch: 123 Tech Street, Makati City, Philippines</p>
+        </div>
+        <div class="footer-col">
+          <h3>Sitemap</h3>
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="products.html">Browse Products</a></li>
+            <li><a href="aboutus.html">About Us</a></li>
+            <li><a href="pricelist.html">Price List</a></li>
+            <li><a href="contacts.html">Contact Us</a></li>
+          </ul>
+        </div>
+        <div class="footer-col footer-brand">
+          <div class="logo">zzm<span>hub</span></div>
+          <p>Copyright © 2019-2026 ZZMHUB. All rights reserved.</p>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>

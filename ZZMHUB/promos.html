@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Promos & Discounts - ZZMHUB Laptop Store</title>
+  <link rel="stylesheet" href="style.css">
+<base target="_blank">
+</head>
+<body>
+  <header>
+    <div class="container">
+      <div class="header-top">
+        <a href="index.html" class="logo">zzm<span>hub</span></a>
+        <div class="search-box">
+          <input type="text" placeholder="Search laptops...">
+          <button>Search</button>
+        </div>
+        <div class="header-actions">
+          <div class="cart-icon">
+            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <circle cx="8" cy="21" r="1"></circle>
+              <circle cx="19" cy="21" r="1"></circle>
+              <path d="M2.05 2.05h2l2.66 12.42a2 2 0 0 0 2 1.58h9.78a2 2 0 0 0 1.95-1.57l1.65-7.43H5.12"></path>
+            </svg>
+            <span class="cart-count" id="cart-count">0</span>
+          </div>
+          <span class="cart-total" id="cart-total">₱ 0.00</span>
+          <div id="login-area">
+            <a href="login.html" class="btn-login">Login / Register</a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <nav>
+      <div class="container">
+        <div class="nav-links">
+          <a href="index.html">Home</a>
+          <a href="products.html">Products</a>
+          <a href="aboutus.html">About Us</a>
+          <a href="pricelist.html">Price List</a>
+          <a href="contacts.html">Contact Us</a>
+        </div>
+      </div>
+    </nav>
+  </header>
+
+  <main>
+    <div class="promo-banner">
+      <div class="container">
+        <h1>Exclusive Promos & Discounts</h1>
+        <p>Special deals for our valued members only!</p>
+      </div>
+    </div>
+
+    <div class="container py-12">
+      <h2 class="section-title">Limited Time Offers</h2>
+
+      <div class="promo-grid">
+        <div class="promo-card">
+          <div class="promo-image">
+            <span class="product-image-placeholder">🎮 ROG Strix G16</span>
+          </div>
+          <div class="promo-content">
+            <span class="promo-badge">15% OFF</span>
+            <h3>ASUS ROG Strix G16 (2025)</h3>
+            <p>High-performance gaming laptop with massive member discount!</p>
+            <div class="promo-price">
+              ₱ 59,495.00
+              <span>₱ 69,995.00</span>
+            </div>
+            <button class="btn-add-cart mt-4" onclick="addToCart('ASUS ROG Strix G16 (Promo)', 59495)">Add to Cart</button>
+          </div>
+        </div>
+
+        <div class="promo-card">
+          <div class="promo-image">
+            <span class="product-image-placeholder">🎒 IdeaPad Slim 3</span>
+          </div>
+          <div class="promo-content">
+            <span class="promo-badge">10% OFF</span>
+            <h3>Lenovo IdeaPad Slim 3</h3>
+            <p>Perfect school & work laptop at a special member price!</p>
+            <div class="promo-price">
+              ₱ 26,095.00
+              <span>₱ 28,995.00</span>
+            </div>
+            <button class="btn-add-cart mt-4" onclick="addToCart('Lenovo IdeaPad Slim 3 (Promo)', 26095)">Add to Cart</button>
+          </div>
+        </div>
+
+        <div class="promo-card">
+          <div class="promo-image">
+            <span class="product-image-placeholder">🎮 Nitro V 16</span>
+          </div>
+          <div class="promo-content">
+            <span class="promo-badge">FLASH SALE</span>
+            <h3>Acer Nitro V 16</h3>
+            <p>Budget gaming beast at flash sale price — Limited stock!</p>
+            <div class="promo-price">
+              ₱ 46,995.00
+              <span>₱ 54,995.00</span>
+            </div>
+            <button class="btn-add-cart mt-4" onclick="addToCart('Acer Nitro V 16 (Promo)', 46995)">Add to Cart</button>
+          </div>
+        </div>
+      </div>
+
+      <h2 class="section-title">Member Flash Sales</h2>
+
+      <div class="promo-grid">
+        <div class="promo-card">
+          <div class="promo-image">
+            <span class="product-image-placeholder">🎮 Legion 5i</span>
+          </div>
+          <div class="promo-content">
+            <span class="promo-badge">FLASH SALE</span>
+            <h3>Lenovo Legion 5i</h3>
+            <p>Midrange gaming powerhouse at flash sale price!</p>
+            <div class="promo-price">
+              ₱ 76,495.00
+              <span>₱ 89,995.00</span>
+            </div>
+            <button class="btn-add-cart mt-4" onclick="addToCart('Lenovo Legion 5i (Flash)', 76495)">Add to Cart</button>
+          </div>
+        </div>
+
+        <div class="promo-card">
+          <div class="promo-image">
+            <span class="product-image-placeholder">💼 HP Laptop 14</span>
+          </div>
+          <div class="promo-content">
+            <span class="promo-badge">FLASH SALE</span>
+            <h3>HP Laptop 14-EP1144TU</h3>
+            <p>Reliable student laptop at a steal!</p>
+            <div class="promo-price">
+              ₱ 22,995.00
+              <span>₱ 26,995.00</span>
+            </div>
+            <button class="btn-add-cart mt-4" onclick="addToCart('HP Laptop 14 (Flash)', 22995)">Add to Cart</button>
+          </div>
+        </div>
+
+        <div class="promo-card">
+          <div class="promo-image">
+            <span class="product-image-placeholder">💼 Vivobook 14</span>
+          </div>
+          <div class="promo-content">
+            <span class="promo-badge">FLASH SALE</span>
+            <h3>ASUS Vivobook 14 X1404V</h3>
+            <p>Everyday productivity laptop on flash sale!</p>
+            <div class="promo-price">
+              ₱ 25,495.00
+              <span>₱ 29,995.00</span>
+            </div>
+            <button class="btn-add-cart mt-4" onclick="addToCart('ASUS Vivobook 14 (Flash)', 25495)">Add to Cart</button>
+          </div>
+        </div>
+      </div>
+
+      <h2 class="section-title">Seasonal Discounts</h2>
+
+      <div class="promo-grid">
+        <div class="promo-card">
+          <div class="promo-image">
+            <span class="product-image-placeholder">🎒 Back to School</span>
+          </div>
+          <div class="promo-content">
+            <span class="promo-badge">SEASONAL</span>
+            <h3>Student Starter Pack</h3>
+            <p>IdeaPad Slim 3 + Wireless Mouse + Laptop Bag bundle!</p>
+            <div class="promo-price">
+              ₱ 31,995.00
+              <span>₱ 34,995.00</span>
+            </div>
+            <button class="btn-add-cart mt-4" onclick="addToCart('Student Starter Pack', 31995)">Add to Cart</button>
+          </div>
+        </div>
+
+        <div class="promo-card">
+          <div class="promo-image">
+            <span class="product-image-placeholder">🎮 Game On Bundle</span>
+          </div>
+          <div class="promo-content">
+            <span class="promo-badge">SEASONAL</span>
+            <h3>Gamer Pro Bundle</h3>
+            <p>ROG Strix G16 + Gaming Headset + Mousepad combo!</p>
+            <div class="promo-price">
+              ₱ 74,995.00
+              <span>₱ 79,995.00</span>
+            </div>
+            <button class="btn-add-cart mt-4" onclick="addToCart('Gamer Pro Bundle', 74995)">Add to Cart</button>
+          </div>
+        </div>
+
+        <div class="promo-card">
+          <div class="promo-image">
+            <span class="product-image-placeholder">💼 Work From Home</span>
+          </div>
+          <div class="promo-content">
+            <span class="promo-badge">SEASONAL</span>
+            <h3>WFH Essentials Bundle</h3>
+            <p>HP Laptop 14 + Webcam + USB Hub for remote work!</p>
+            <div class="promo-price">
+              ₱ 29,995.00
+              <span>₱ 32,995.00</span>
+            </div>
+            <button class="btn-add-cart mt-4" onclick="addToCart('WFH Essentials Bundle', 29995)">Add to Cart</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </main>
+
+  <footer>
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-col">
+          <h3>Address</h3>
+          <p>Main Branch: 123 Tech Street, Makati City, Philippines</p>
+
+        </div>
+        <div class="footer-col">
+          <h3>Sitemap</h3>
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="products.html">Browse Products</a></li>
+            <li><a href="aboutus.html">About Us</a></li>
+            <li><a href="pricelist.html">Price List</a></li>
+            <li><a href="contacts.html">Contact Us</a></li>
+          </ul>
+        </div>
+        <div class="footer-col footer-brand">
+          <div class="logo">zzm<span>hub</span></div>
+          <p>Copyright © 2019-2026 ZZMHUB. All rights reserved.</p>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+  <script>
+    document.addEventListener('DOMContentLoaded', function() {
+      const user = JSON.parse(localStorage.getItem('zzmhub_user'));
+      if (!user || user.role !== 'user') {
+        window.location.href = 'login.html';
+      }
+    });
+  </script>
+</body>
+</html>
