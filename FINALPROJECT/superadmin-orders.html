@@ -6,12 +6,11 @@
   <title>Orders - ZZMHUB Laptop Store Super Admin</title>
   <link rel="stylesheet" href="style.css">
 <base target="_blank">
-<base target="_blank">
 </head>
 <body class="dashboard-page">
   <div class="dashboard-header">
     <div class="container">
-      <a href="index.html" class="logo">zzm<span>hub</span></a>
+      <a href="index.html" class="logo" target="_self">zzm<span>hub</span></a>
       <h1>Super Admin Dashboard</h1>
       <div style="display:flex;align-items:center;gap:16px;">
         <span id="dashboard-user" style="color:var(--text-muted);font-size:14px;">Super Admin</span>
@@ -23,11 +22,11 @@
   <div style="background:var(--bg-secondary);border-bottom:1px solid var(--border-color);">
     <div class="container">
       <div class="dashboard-nav">
-        <a href="superadmin-dashboard.html">Analytics</a>
-        <a href="superadmin-accounts.html">Account Management</a>
-        <a href="superadmin-products.html">Products</a>
-        <a href="superadmin-orders.html" class="active">Orders</a>
-        <a href="index.html">View Store</a>
+        <a href="superadmin-dashboard.html" target="_self">Analytics</a>
+        <a href="superadmin-accounts.html" target="_self">Account Management</a>
+        <a href="superadmin-products.html" target="_self">Products</a>
+        <a href="superadmin-orders.html" class="active" target="_self">Orders</a>
+        <a href="index.html" target="_self">View Store</a>
       </div>
     </div>
   </div>
@@ -57,7 +56,7 @@
               <td>3 items</td>
               <td>₱ 45,200.00</td>
               <td>2026-05-01</td>
-              <td><span style="background:var(--warning);color:#000;padding:4px 10px;font-size:12px;font-weight:700;border-radius:4px;">Pending</span></td>
+              <td><span style="background:var(--warning);color: var(--text-primary);padding:4px 10px;font-size:12px;font-weight:700;border-radius:4px;">Pending</span></td>
               <td><button class="btn-small">View</button> <button class="btn-small">Update</button></td>
             </tr>
             <tr>
@@ -67,7 +66,7 @@
               <td>2 items</td>
               <td>₱ 28,500.00</td>
               <td>2026-05-02</td>
-              <td><span style="background:var(--success);color:#000;padding:4px 10px;font-size:12px;font-weight:700;border-radius:4px;">Shipped</span></td>
+              <td><span style="background:var(--success);color: var(--text-primary);padding:4px 10px;font-size:12px;font-weight:700;border-radius:4px;">Shipped</span></td>
               <td><button class="btn-small">View</button> <button class="btn-small">Update</button></td>
             </tr>
             <tr>
@@ -77,7 +76,7 @@
               <td>5 items</td>
               <td>₱ 67,800.00</td>
               <td>2026-05-03</td>
-              <td><span style="background:var(--accent-cyan);color:#000;padding:4px 10px;font-size:12px;font-weight:700;border-radius:4px;">Processing</span></td>
+              <td><span style="background:var(--accent-cyan);color: var(--text-primary);padding:4px 10px;font-size:12px;font-weight:700;border-radius:4px;">Processing</span></td>
               <td><button class="btn-small">View</button> <button class="btn-small">Update</button></td>
             </tr>
             <tr>
@@ -87,7 +86,7 @@
               <td>1 item</td>
               <td>₱ 12,500.00</td>
               <td>2026-05-04</td>
-              <td><span style="background:var(--success);color:#000;padding:4px 10px;font-size:12px;font-weight:700;border-radius:4px;">Delivered</span></td>
+              <td><span style="background:var(--success);color: var(--text-primary);padding:4px 10px;font-size:12px;font-weight:700;border-radius:4px;">Delivered</span></td>
               <td><button class="btn-small">View</button> <button class="btn-small">Update</button></td>
             </tr>
           </tbody>

@@ -3,15 +3,14 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Super Admin Dashboard - ZZMHUB Laptop Store</title>
+  <title>Account Management - ZZMHUB Laptop Store Super Admin</title>
   <link rel="stylesheet" href="style.css">
-<base target="_blank">
 <base target="_blank">
 </head>
 <body class="dashboard-page">
   <div class="dashboard-header">
     <div class="container">
-      <a href="index.html" class="logo">zzm<span>hub</span></a>
+      <a href="index.html" class="logo" target="_self">zzm<span>hub</span></a>
       <h1>Super Admin Dashboard</h1>
       <div style="display:flex;align-items:center;gap:16px;">
         <span id="dashboard-user" style="color:var(--text-muted);font-size:14px;">Super Admin</span>
@@ -23,65 +22,38 @@
   <div style="background:var(--bg-secondary);border-bottom:1px solid var(--border-color);">
     <div class="container">
       <div class="dashboard-nav">
-        <a href="superadmin-dashboard.html" class="active">Analytics</a>
-        <a href="superadmin-accounts.html">Account Management</a>
-        <a href="superadmin-products.html">Products</a>
-        <a href="superadmin-orders.html">Orders</a>
-        <a href="index.html">View Store</a>
+        <a href="superadmin-dashboard.html" target="_self">Analytics</a>
+        <a href="superadmin-accounts.html" class="active" target="_self">Account Management</a>
+        <a href="superadmin-products.html" target="_self">Products</a>
+        <a href="superadmin-orders.html" target="_self">Orders</a>
+        <a href="index.html" target="_self">View Store</a>
       </div>
     </div>
   </div>
 
   <main class="dashboard-main">
     <div class="container">
-      <h2 style="font-size:24px;font-weight:800;margin-bottom:24px;color:var(--text-primary);">Analytics Overview</h2>
-
-      <div class="stats-grid">
-        <div class="stat-card">
-          <h4>Total Sales</h4>
-          <div class="stat-value">₱ 2,845,120.00</div>
-          <div class="stat-change">+18.3% from last month</div>
-        </div>
-        <div class="stat-card">
-          <h4>Total Orders</h4>
-          <div class="stat-value">687</div>
-          <div class="stat-change">+14.7% from last month</div>
-        </div>
-        <div class="stat-card">
-          <h4>Total Accounts</h4>
-          <div class="stat-value">245</div>
-          <div class="stat-change">+22.1% from last month</div>
-        </div>
-        <div class="stat-card">
-          <h4>Total Products</h4>
-          <div class="stat-value">89</div>
-          <div class="stat-change">+5.4% from last month</div>
-        </div>
+      <div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:24px;">
+        <h2 style="font-size:24px;font-weight:800;color:var(--text-primary);">Account Management</h2>
+        <button class="btn-primary">+ Add New Account</button>
       </div>
 
-      <div class="chart-section">
-        <h3>Sales Analytics (All Branches)</h3>
-        <div class="chart-placeholder">[Sales Chart Placeholder]</div>
-      </div>
-
-      <div class="chart-section">
-        <h3>Order Trends (All Branches)</h3>
-        <div class="chart-placeholder">[Orders Chart Placeholder]</div>
-      </div>
-
-      <div class="chart-section">
-        <h3>Account Growth</h3>
-        <div class="chart-placeholder">[Account Chart Placeholder]</div>
-      </div>
-
-      <div class="chart-section">
-        <h3>Branch Performance</h3>
-        <div class="chart-placeholder">[Branch Chart Placeholder]</div>
-      </div>
-
-      <div class="chart-section">
-        <h3>Revenue Breakdown</h3>
-        <div class="chart-placeholder">[Revenue Chart Placeholder]</div>
+      <div style="overflow-x:auto;">
+        <table class="management-table">
+          <thead>
+            <tr>
+              <th>ID</th>
+              <th>Name</th>
+              <th>Email</th>
+              <th>Role</th>
+              <th>Status</th>
+              <th>Joined</th>
+              <th>Actions</th>
+            </tr>
+          </thead>
+          <tbody id="accounts-table-body">
+          </tbody>
+        </table>
       </div>
     </div>
   </main>

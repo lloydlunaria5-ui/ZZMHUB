@@ -1,3 +1,4 @@
+<!DOCTYPE html>
 !DOCTYPE html>
 <html lang="en">
 <head>
@@ -6,19 +7,18 @@
   <title>Shopping Cart - ZZMHUB Laptop Store</title>
   <link rel="stylesheet" href="style.css">
 <base target="_blank">
-<base target="_blank">
 </head>
 <body>
   <header>
     <div class="container">
       <div class="header-top">
-        <a href="index.html" class="logo">zzm<span>hub</span></a>
+        <a href="index.html" class="logo" target="_self">zzm<span>hub</span></a>
         <div class="search-box">
           <input type="text" placeholder="Search...">
           <button>Search</button>
         </div>
         <div class="header-actions">
-          <a href="cart.html" class="cart-link">
+          <a href="cart.html" class="cart-link" target="_self">
             <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
               <circle cx="8" cy="21" r="1"></circle>
               <circle cx="19" cy="21" r="1"></circle>
@@ -27,9 +27,9 @@
             <span class="cart-count" id="cart-count">0</span>
           </a>
           <span class="cart-total" id="cart-total">₱ 0.00</span>
-          <a href="cart.html" class="btn-login">My Cart</a>
+          <a href="cart.html" class="btn-login" target="_self">My Cart</a>
           <div id="login-area">
-            <a href="login.html" class="btn-login">Login</a>
+            <a href="login.html" class="btn-login" target="_self">Login</a>
           </div>
         </div>
       </div>
@@ -37,12 +37,12 @@
     <nav>
       <div class="container">
         <div class="nav-links">
-          <a href="index.html">Home</a>
-          <a href="products.html">Products</a>
-          <a href="aboutus.html">About Us</a>
-          <a href="pricelist.html">Price List</a>
-          <a href="contacts.html">Contact Us</a>
-          <a href="cart.html" class="active">Cart</a>
+          <a href="index.html" target="_self">Home</a>
+          <a href="products.html" target="_self">Products</a>
+          <a href="aboutus.html" target="_self">About Us</a>
+          <a href="pricelist.html" target="_self">Price List</a>
+          <a href="contacts.html" target="_self">Contact Us</a>
+          <a href="cart.html" class="active" target="_self">Cart</a>
         </div>
       </div>
     </nav>
@@ -56,15 +56,15 @@
         <div class="emoji">🔒</div>
         <h2 style="font-size:24px;font-weight:700;margin-bottom:8px;color:var(--text-primary);">Login Required</h2>
         <p style="color:var(--text-secondary);margin-bottom:24px;">Please log in as a user to view your cart.</p>
-        <a href="login.html" class="btn-primary">Log In</a>
-        <a href="products.html" class="btn-login" style="margin-left:12px;text-decoration:none;">Continue Shopping</a>
+        <a href="login.html" class="btn-primary" target="_self">Log In</a>
+        <a href="products.html" class="btn-login" style="margin-left:12px;text-decoration:none;" target="_self">Continue Shopping</a>
       </div>
 
       <div id="cart-empty" style="display:none;">
         <div class="emoji">🛒</div>
         <h2 style="font-size:24px;font-weight:700;margin-bottom:8px;color:var(--text-primary);">Your cart is empty</h2>
         <p style="color:var(--text-secondary);margin-bottom:24px;">Add some laptops to your cart!</p>
-        <a href="products.html" class="btn-primary">Browse Products</a>
+        <a href="products.html" class="btn-primary" target="_self">Browse Products</a>
       </div>
 
       <div id="cart-content">
@@ -84,7 +84,7 @@
         </div>
 
         <div style="display:flex;justify-content:space-between;align-items:center;margin-top:24px;">
-          <a href="products.html" class="btn-login" style="text-decoration:none;">← Continue Shopping</a>
+          <a href="products.html" class="btn-login" style="text-decoration:none;" target="_self">← Continue Shopping</a>
           <button onclick="clearCart()" class="btn-small btn-danger">Clear Cart</button>
         </div>
 
@@ -103,7 +103,7 @@
             <span id="cart-total-amount" style="color:var(--accent-cyan);">₱ 0.00</span>
           </div>
           <p style="font-size:12px;color:var(--text-muted);margin-top:8px;">Free shipping on orders over ₱ 5,000.00</p>
-          <a href="checkout.html" class="btn-primary" style="width:100%;text-align:center;margin-top:16px;display:block;">Proceed to Checkout</a>
+          <a href="checkout.html" class="btn-primary" style="width:100%;text-align:center;margin-top:16px;display:block;" target="_self">Proceed to Checkout</a>
         </div>
       </div>
     </div>
@@ -120,9 +120,9 @@
         <div class="footer-col">
           <h3>Sitemap</h3>
           <ul>
-            <li><a href="index.html">Home</a></li>
-            <li><a href="products.html">Products</a></li>
-            <li><a href="cart.html">Cart</a></li>
+            <li><a href="index.html" target="_self">Home</a></li>
+            <li><a href="products.html" target="_self">Products</a></li>
+            <li><a href="cart.html" target="_self">Cart</a></li>
           </ul>
         </div>
         <div class="footer-col footer-brand">

@@ -609,3 +609,50 @@ document.addEventListener('DOMContentLoaded', function() {
         initOrderSuccess();
     }
 })
+
+
+// ===== PAGE TRANSITIONS =====
+(function() {
+    // Add exit animation when clicking internal links
+    document.addEventListener('click', function(e) {
+        const link = e.target.closest('a');
+        if (!link) return;
+
+        const href = link.getAttribute('href');
+        if (!href) return;
+
+        // Skip external links, anchors, javascript, mailto, tel
+        if (href.startsWith('#') || 
+            href.startsWith('javascript') || 
+            href.startsWith('mailto:') || 
+            href.startsWith('tel:') ||
+            href.startsWith('http') && !href.includes(window.location.hostname)) {
+            return;
+        }
+
+        // Skip if modifier keys are pressed (Ctrl, Cmd, Shift)
+        if (e.ctrlKey || e.metaKey || e.shiftKey) return;
+
+        e.preventDefault();
+
+        // Add exit animation
+        document.body.style.animation = 'pageExit 0.25s cubic-bezier(0.55, 0, 1, 0.45) forwards';
+        document.body.style.pointerEvents = 'none';
+
+        // Navigate after animation
+        setTimeout(function() {
+            window.location.href = href;
+        }, 250);
+    });
+
+    // Handle browser back/forward buttons - ensure smooth re-entry
+    window.addEventListener('pageshow', function(e) {
+        if (e.persisted) {
+            // Page was loaded from cache (back/forward)
+            document.body.style.animation = 'none';
+            document.body.offsetHeight; // Trigger reflow
+            document.body.style.animation = 'pageEnter 0.5s cubic-bezier(0.22, 1, 0.36, 1) forwards';
+            document.body.style.pointerEvents = 'auto';
+        }
+    });
+})();
