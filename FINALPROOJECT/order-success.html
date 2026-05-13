@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Order Confirmed - ZZMHUB Laptop Store</title>
+  <link rel="stylesheet" href="style.css">
+<base target="_blank">
+</head>
+<body>
+  <header>
+    <div class="container">
+      <div class="header-top">
+        <a href="index.html" class="logo" target="_self">zzm<span>hub</span></a>
+        <div class="search-box">
+          <input type="text" placeholder="Search laptops...">
+          <button>Search</button>
+        </div>
+        <div class="header-actions">
+          <div class="cart-icon">
+            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <circle cx="8" cy="21" r="1"></circle>
+              <circle cx="19" cy="21" r="1"></circle>
+              <path d="M2.05 2.05h2l2.66 12.42a2 2 0 0 0 2 1.58h9.78a2 2 0 0 0 1.95-1.57l1.65-7.43H5.12"></path>
+            </svg>
+            <span class="cart-count" id="cart-count">0</span>
+          </div>
+          <span class="cart-total" id="cart-total">₱ 0.00</span>
+          <div id="login-area">
+            <a href="login.html" class="btn-login" target="_self">Login / Register</a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <nav>
+      <div class="container">
+        <div class="nav-links">
+          <a href="index.html" target="_self">Home</a>
+          <a href="products.html" target="_self">Products</a>
+          <a href="aboutus.html" target="_self">About Us</a>
+          <a href="pricelist.html" target="_self">Price List</a>
+          <a href="contacts.html" target="_self">Contact Us</a>
+        </div>
+      </div>
+    </nav>
+  </header>
+
+  <main>
+    <div class="container py-12">
+      <div class="order-success-box">
+        <div class="order-success-emoji">✅</div>
+        <h1 style="font-size:32px;font-weight:800;margin-bottom:8px;color:var(--text-primary);">Order Confirmed!</h1>
+        <p style="color:var(--text-secondary);margin-bottom:32px;">Thank you for your purchase. Your order has been received.</p>
+
+        <div class="order-details">
+          <h3 style="font-size:18px;font-weight:800;margin-bottom:20px;padding-bottom:12px;border-bottom:2px solid var(--border-color);color:var(--accent-cyan);">Order Details</h3>
+
+          <div style="display:flex;justify-content:space-between;padding:10px 0;">
+            <span style="color:var(--text-secondary);">Order ID</span>
+            <span id="success-order-id" style="font-weight:700;color:var(--text-primary);">-</span>
+          </div>
+
+          <div style="display:flex;justify-content:space-between;padding:10px 0;">
+            <span style="color:var(--text-secondary);">Date</span>
+            <span id="success-order-date" style="font-weight:700;color:var(--text-primary);">-</span>
+          </div>
+
+          <div style="display:flex;justify-content:space-between;padding:10px 0;">
+            <span style="color:var(--text-secondary);">Payment Method</span>
+            <span id="success-order-payment" style="font-weight:700;color:var(--text-primary);">-</span>
+          </div>
+
+          <div style="display:flex;justify-content:space-between;padding:10px 0;">
+            <span style="color:var(--text-secondary);">Total Amount</span>
+            <span id="success-order-total" style="font-weight:700;color:var(--accent-cyan);">-</span>
+          </div>
+
+          <div style="margin-top:16px;padding-top:16px;border-top:1px solid var(--border-color);">
+            <h4 style="font-size:14px;font-weight:700;margin-bottom:12px;text-transform:uppercase;letter-spacing:1px;color:var(--accent-cyan);">Items Ordered</h4>
+            <div id="success-items">
+            </div>
+          </div>
+        </div>
+
+        <a href="index.html" class="btn-primary" target="_self">Continue Shopping</a>
+        <a href="products.html" class="btn-login" style="margin-left:12px;text-decoration:none;" target="_self">Browse More</a>
+      </div>
+    </div>
+  </main>
+
+  <footer>
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-col">
+          <h3>Address</h3>
+          <p>Main Branch: 123 Tech Street, Makati City, Philippines</p>
+
+        </div>
+        <div class="footer-col">
+          <h3>Sitemap</h3>
+          <ul>
+            <li><a href="index.html" target="_self">Home</a></li>
+            <li><a href="products.html" target="_self">Browse Products</a></li>
+            <li><a href="aboutus.html" target="_self">About Us</a></li>
+            <li><a href="pricelist.html" target="_self">Price List</a></li>
+            <li><a href="contacts.html" target="_self">Contact Us</a></li>
+          </ul>
+        </div>
+        <div class="footer-col footer-brand">
+          <div class="logo">zzm<span>hub</span></div>
+          <p>Copyright © 2019-2026 ZZMHUB. All rights reserved.</p>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
