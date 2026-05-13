@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Products - ZZMHUB Laptop Store Super Admin</title>
+  <link rel="stylesheet" href="style.css">
+<base target="_blank">
+</head>
+<body class="dashboard-page">
+  <div class="dashboard-header">
+    <div class="container">
+      <a href="index.html" class="logo" target="_self">zzm<span>hub</span></a>
+      <h1>Super Admin Dashboard</h1>
+      <div style="display:flex;align-items:center;gap:16px;">
+        <span id="dashboard-user" style="color:var(--text-muted);font-size:14px;">Super Admin</span>
+        <button onclick="logout()" class="btn-login" style="border-color:var(--border-color);color:var(--text-primary);">Logout</button>
+      </div>
+    </div>
+  </div>
+
+  <div style="background:var(--bg-secondary);border-bottom:1px solid var(--border-color);">
+    <div class="container">
+      <div class="dashboard-nav">
+        <a href="superadmin-dashboard.html" target="_self">Analytics</a>
+        <a href="superadmin-accounts.html" target="_self">Account Management</a>
+        <a href="superadmin-products.html" class="active" target="_self">Products</a>
+        <a href="superadmin-orders.html" target="_self">Orders</a>
+        <a href="index.html" target="_self">View Store</a>
+      </div>
+    </div>
+  </div>
+
+  <main class="dashboard-main">
+    <div class="container">
+      <div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:24px;">
+        <h2 style="font-size:24px;font-weight:800;color:var(--text-primary);">Product Management (All Branches)</h2>
+        <button class="btn-primary">+ Add New Product</button>
+      </div>
+
+      <div style="display:flex;gap:12px;margin-bottom:24px;flex-wrap:wrap;">
+        <button class="btn-small" style="background:var(--accent-cyan);color: var(--text-primary);">All Components</button>
+        <button class="btn-small">Processors</button>
+        <button class="btn-small">Graphics Cards</button>
+        <button class="btn-small">Memory</button>
+        <button class="btn-small">Storage</button>
+        <button class="btn-small">Displays</button>
+        <button class="btn-small">Low Stock</button>
+      </div>
+
+      <div style="overflow-x:auto;">
+        <table class="management-table">
+          <thead>
+            <tr>
+              <th>ID</th>
+              <th>Product Name</th>
+              <th>Category</th>
+              <th>Price</th>
+              <th>Stock</th>
+              <th>Branch</th>
+              <th>Status</th>
+              <th>Actions</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>1</td>
+              <td>Intel Core i9-14900K</td>
+              <td>Processors</td>
+              <td>₱ 35,500.00</td>
+              <td>12</td>
+              <td>All</td>
+              <td><span style="background:var(--success);color: var(--text-primary);padding:4px 10px;font-size:12px;font-weight:700;border-radius:4px;">Active</span></td>
+              <td><button class="btn-small">Edit</button> <button class="btn-small btn-danger">Delete</button></td>
+            </tr>
+            <tr>
+              <td>2</td>
+              <td>AMD Ryzen 9 7950X</td>
+              <td>Processors</td>
+              <td>₱ 32,800.00</td>
+              <td>8</td>
+              <td>All</td>
+              <td><span style="background:var(--success);color: var(--text-primary);padding:4px 10px;font-size:12px;font-weight:700;border-radius:4px;">Active</span></td>
+              <td><button class="btn-small">Edit</button> <button class="btn-small btn-danger">Delete</button></td>
+            </tr>
+            <tr>
+              <td>3</td>
+              <td>RTX 4080 Super</td>
+              <td>Graphics Cards</td>
+              <td>₱ 65,990.00</td>
+              <td>5</td>
+              <td>Makati</td>
+              <td><span style="background:var(--warning);color: var(--text-primary);padding:4px 10px;font-size:12px;font-weight:700;border-radius:4px;">Low Stock</span></td>
+              <td><button class="btn-small">Edit</button> <button class="btn-small btn-danger">Delete</button></td>
+            </tr>
+            <tr>
+              <td>4</td>
+              <td>Corsair Vengeance 32GB DDR5</td>
+              <td>Memory</td>
+              <td>₱ 8,500.00</td>
+              <td>25</td>
+              <td>All</td>
+              <td><span style="background:var(--success);color: var(--text-primary);padding:4px 10px;font-size:12px;font-weight:700;border-radius:4px;">Active</span></td>
+              <td><button class="btn-small">Edit</button> <button class="btn-small btn-danger">Delete</button></td>
+            </tr>
+            <tr>
+              <td>5</td>
+              <td>Samsung 990 Pro 2TB NVMe</td>
+              <td>Storage</td>
+              <td>₱ 12,500.00</td>
+              <td>30</td>
+              <td>All</td>
+              <td><span style="background:var(--success);color: var(--text-primary);padding:4px 10px;font-size:12px;font-weight:700;border-radius:4px;">Active</span></td>
+              <td><button class="btn-small">Edit</button> <button class="btn-small btn-danger">Delete</button></td>
+            </tr>
+            <tr>
+              <td>6</td>
+              <td>RTX 5070 Ti</td>
+              <td>Graphics Cards</td>
+              <td>₱ 48,500.00</td>
+              <td>3</td>
+              <td>Cebu</td>
+              <td><span style="background:var(--warning);color: var(--text-primary);padding:4px 10px;font-size:12px;font-weight:700;border-radius:4px;">Low Stock</span></td>
+              <td><button class="btn-small">Edit</button> <button class="btn-small btn-danger">Delete</button></td>
+            </tr>
+            <tr>
+              <td>7</td>
+              <td>Intel Core i7-14700HX</td>
+              <td>Processors</td>
+              <td>₱ 22,800.00</td>
+              <td>15</td>
+              <td>All</td>
+              <td><span style="background:var(--success);color: var(--text-primary);padding:4px 10px;font-size:12px;font-weight:700;border-radius:4px;">Active</span></td>
+              <td><button class="btn-small">Edit</button> <button class="btn-small btn-danger">Delete</button></td>
+            </tr>
+            <tr>
+              <td>8</td>
+              <td>16GB DDR5-5600 SODIMM</td>
+              <td>Memory</td>
+              <td>₱ 4,200.00</td>
+              <td>50</td>
+              <td>All</td>
+              <td><span style="background:var(--success);color: var(--text-primary);padding:4px 10px;font-size:12px;font-weight:700;border-radius:4px;">Active</span></td>
+              <td><button class="btn-small">Edit</button> <button class="btn-small btn-danger">Delete</button></td>
+            </tr>
+            <tr>
+              <td>9</td>
+              <td>16" 165Hz IPS Display Panel</td>
+              <td>Displays</td>
+              <td>₱ 8,900.00</td>
+              <td>6</td>
+              <td>Davao</td>
+              <td><span style="background:var(--warning);color: var(--text-primary);padding:4px 10px;font-size:12px;font-weight:700;border-radius:4px;">Low Stock</span></td>
+              <td><button class="btn-small">Edit</button> <button class="btn-small btn-danger">Delete</button></td>
+            </tr>
+            <tr>
+              <td>10</td>
+              <td>AMD Ryzen 5 8640HS</td>
+              <td>Processors</td>
+              <td>₱ 14,500.00</td>
+              <td>20</td>
+              <td>All</td>
+              <td><span style="background:var(--success);color: var(--text-primary);padding:4px 10px;font-size:12px;font-weight:700;border-radius:4px;">Active</span></td>
+              <td><button class="btn-small">Edit</button> <button class="btn-small btn-danger">Delete</button></td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </main>
+
+  <script src="script.js"></script>
+  <script>
+    document.addEventListener('DOMContentLoaded', function() {
+      const user = JSON.parse(localStorage.getItem('zzmhub_user'));
+      if (!user || user.role !== 'superadmin') {
+        window.location.href = 'login.html';
+      }
+    });
+  </script>
+</body>
+</html>
